@@ -1285,6 +1285,7 @@ void setPinMapping(byte boardID)
       pinIAT = A0; //IAT sensor pin
       pinCLT = A1; //CLS sensor pin
       pinO2 = A8; //O2 Sensor pin
+	  pinO2_2 = A6; //O2 Sensor pin
       pinBat = A4; //Battery reference voltage pin
       pinDisplayReset = 48; // OLED reset pin
       pinTachOut = 49; //Tacho output pin  (Goes to ULN2803)
@@ -1301,6 +1302,8 @@ void setPinMapping(byte boardID)
       pinLaunch = 51; //Can be overwritten below
       pinFlex = 2; // Flex sensor (Must be external interrupt enabled)
       pinResetControl = 43; //Reset control output
+	  pinFuelPressure = A11;//Fuel Pressure
+	  pinOilPressure = A12;// Oil Pressure
       pinBaro = A5;
       pinVSS = 20;
       pinWMIEmpty = 46;
